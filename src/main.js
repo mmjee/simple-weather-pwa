@@ -5,6 +5,8 @@ import './registerServiceWorker'
 import vuetify from './plugins/vuetify'
 import '@/plugins/gmaps'
 
+import '@fontsource/roboto/latin.css'
+
 Vue.config.productionTip = false
 
 new Vue({
