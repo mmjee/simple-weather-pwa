@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "gmap-vue": "^1.5.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vuetify": "^2.4.0"
   },
   "devDependencies": {
+    "@mdi/js": "^6.2.95",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-pwa": "~4.5.0",
