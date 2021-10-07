@@ -36,7 +36,10 @@
                   Wind
                 </v-card-title>
                 <v-card-text class="text-h5">
-                  {{ weatherData.wind.speed}}mph at {{ weatherData.wind.deg }}&#176; with a gust of {{ weatherData.wind.gust }}mph
+                  {{ weatherData.wind.speed}}mph at {{ weatherData.wind.deg }}&#176;
+                  <span v-if="weatherData.wind.gust">
+                    with a gust of {{ weatherData.wind.gust }}mph
+                  </span>
                 </v-card-text>
               </v-card>
             </v-col>
@@ -73,7 +76,7 @@ const LS_KEYS = {
 }
 
 function formatTime (unixTime) {
-  return format(fromUnixTime(unixTime), 'hh:mm:ss aaa')
+  return format(fromUnixTime(unixTime), 'hh:mm:ss aaa XXX')
 }
 
 export default {
